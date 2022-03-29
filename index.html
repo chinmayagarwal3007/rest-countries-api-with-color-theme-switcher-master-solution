@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <!------------------------------toolbar---------------------------------------->
+  <div class="toolbar">
+    <div class="where_to">
+      <h3 onclick="continentAll()" , style="cursor:pointer;">Where in the world?</h3>
+    </div>
+    <div class="theme" onclick="themeChanger()">
+      <div class="moon_image"><img src="moon.png" class="moon" alt="" /></div>
+      <div class="mode_type">
+        <p>Dark Mode</p>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------form---------------------------------------->
+
+  <div class="filter_options" id="filter_options">
+    <div class="search">
+      <form id="myForm">
+        <input name="countryInput" id="countryInput" type="text" class="icon" placeholder="Search for a country...">
+        <input type="submit" hidden>
+      </form>
+    </div>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Filter by Region</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#" onclick="continentAll()" class="all">All</a>
+        <a href="#" onclick="continentAfrica()" class="africa">Africa</a>
+        <a href="#" onclick="continentAmerica()" class="america">America</a>
+        <a href="#" onclick="continentAsia()" class="asia">Asia</a>
+        <a href="#" onclick="continentEurope()" class="europe">Europe</a>
+        <a href="#" onclick="continentOceania()" class="oceania">Oceania</a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!---------------------------------content------------------------------------->
+
+  <div id="content" class="content"></div>
+
+
+
+</body>
+
+<script src="index.js"></script>
+
+</html>

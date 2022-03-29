@@ -1,0 +1,443 @@
+body {
+  background-color: hsl(207, 26%, 17%);
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.content {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: center;
+  grid-gap: 2rem;
+  padding: 3rem 0;
+}
+.card {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "image" "info";
+}
+.image {
+  grid-area: image;
+}
+
+.img {
+  border-radius: 0.4rem 0.4rem 0 0;
+  width: 16rem;
+  height: 10.5rem;
+  object-fit: fill;
+}
+
+.info {
+  padding-left: 1rem;
+  background-color: hsl(209, 23%, 22%);
+  grid-area: info;
+  width: 15rem;
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+.name {
+  color: white;
+  font-weight: 600;
+}
+.population {
+  color: hsl(0, 0%, 85%);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+.region {
+  color: hsl(0, 0%, 85%);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  margin-top: 0.3rem;
+}
+.capital {
+  color: hsl(0, 0%, 85%);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+.data {
+  color: hsl(0, 0%, 52%);
+  font-weight: 300;
+}
+.toolbar {
+  background-color: hsl(209, 23%, 22%);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "where_to theme";
+}
+.where_to {
+  grid-area: where_to;
+  color: white;
+  padding-left: 3rem;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+.theme {
+  grid-area: theme;
+  text-align: right;
+  display: grid;
+  padding-top: 0.35rem;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 100%;
+  grid-template-areas: "moon_image mode_type";
+}
+
+.moon_image {
+  grid-area: moon_image;
+  text-align: right;
+  padding-top: 1rem;
+}
+.mode_type {
+  padding-left: 0.5rem;
+  grid-area: mode_type;
+  text-align: left;
+  color: white;
+  font-weight: 400;
+}
+
+.icon {
+  padding-left: 55px;
+  background-image: url("search.png");
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 20px;
+  border: 0;
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+  height: 3rem;
+  width: 20rem;
+  border-radius: 0.3rem;
+}
+.icon:focus {
+  outline: none;
+}
+.search {
+  grid-area: search;
+  padding-left: 4rem;
+}
+
+::placeholder {
+  color: hsl(0, 0%, 80%);
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 80%);
+  padding: 1rem;
+  padding-right: 4rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  min-width: 10rem;
+  margin-bottom: 0.3rem;
+  background-image: url("arrow.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 16px 16px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: hsl(209, 23%, 22%);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  grid-area: dropdown;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: hsl(209, 23%, 22%);
+  min-width: 12rem;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: hsl(0, 0%, 80%);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  /* background-color: hsl(209, 23%, 20%); */
+  font-size: 1.2rem;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.filter_options {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 100%;
+  grid-template-areas: "search dropdown";
+  padding: 3rem 0;
+}
+
+.backButton {
+  padding: 2rem;
+  padding-left: 4rem;
+  text-align: center;
+}
+
+.back {
+  height: 2.5rem;
+  width: 7rem;
+  background-image: url("arrowLeft.png");
+  background-repeat: no-repeat;
+  background-position: 7% 50%;
+  background-color: hsl(209, 23%, 22%);
+  padding-left: 1.3rem;
+  color: white;
+  border-radius: 0.3rem;
+  background-size: 28px 15px;
+  box-shadow: 0px 0px 5px 3px rgb(23, 32, 41);
+}
+
+.back:hover {
+  height: 2.6rem;
+  cursor: pointer;
+}
+
+.backText {
+  padding-top: 0.6rem;
+}
+.icon2 {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(207, 26%, 17%);
+  outline: none;
+  border: 0 solid hsl(207, 26%, 17%);
+}
+.icon2:focus {
+  outline: none;
+}
+
+.countryInformation {
+  display: grid;
+  padding-top: 3rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "flagImage aboutCountry";
+}
+
+.flagImage {
+  grid-area: flagImage;
+  text-align: center;
+}
+
+.aboutCountry {
+  grid-area: aboutCountry;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "aboutCountryName" "aboutCountryInfo" "neighbours";
+}
+
+.neighbours {
+  padding-top: 2rem;
+  grid-area: neighbours;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 100%;
+  grid-template-areas: "borderText borderCountries";
+}
+
+.borderText {
+  grid-area: borderText;
+  color: hsl(0, 0%, 90%);
+  font-weight: 600;
+}
+
+.borderCountries {
+  grid-area: borderCountries;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: left;
+  grid-gap: 0.4rem;
+  padding-top: 0.7rem;
+}
+
+.aboutCountryName {
+  grid-area: aboutCountryName;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.aboutCountryInfo {
+  padding-top: 0.5rem;
+  grid-area: aboutCountryInfo;
+  color: hsl(0, 0%, 90%);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "aboutCountryInfoLeft aboutCountryInfoRight";
+  font-weight: 600;
+}
+
+.aboutCountryInfoLeft {
+  grid-area: aboutCountryInfoLeft;
+}
+.aboutCountryInfoRight {
+  grid-area: aboutCountryInfoRight;
+}
+
+.native {
+  color: hsl(0, 0%, 70%);
+}
+.mainName {
+  margin-bottom: 0;
+}
+.flagImage {
+  padding-top: 2rem;
+  font-weight: 400;
+}
+
+.neighbourButton {
+  text-align: center;
+  border-radius: 0.2rem;
+  height: 1.8rem;
+  width: 8rem;
+  background-color: hsl(209, 23%, 22%);
+  box-shadow: 0px 0px 0px 1px rgb(23, 32, 41);
+  color: white;
+  outline: none;
+  border: 0 solid hsl(209, 23%, 22%);
+}
+
+@media only screen and (max-width: 1024px) {
+  .filter_options{
+    grid-template-columns: 71% 29%;
+  }
+  .search{
+    padding-left: 2rem;
+  }
+  .content{
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .filter_options{
+    grid-template-columns: 100%;
+    grid-template-rows: 50%;
+    grid-template-areas: "search" "dropdown";
+    padding: 1.5rem 0;
+  }
+  .search{
+    padding-left: 1rem;
+  }
+  .content{
+    grid-template-columns: auto;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .icon {
+    height: 2.5rem;
+    width: 17.5rem;
+  }
+  
+  .dropbtn {
+    padding: 0.9rem;
+    padding-right: 4rem;;
+    min-width: 10rem;
+    margin-bottom: 0.3rem;
+    height: 2.8rem
+  }
+  .dropdown{
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  .dropdown-content {
+    min-width: 10.5rem;
+  }
+  .where_to{
+    font-size:1rem;
+    padding-left: 1rem;
+  }
+  .toolbar{
+    grid-template-columns: 55% 45%;
+  }
+  .theme{
+    grid-template-columns: 45% 55%;
+  }
+
+.backButton{
+  padding-left: 2rem;
+  padding-bottom: 0rem;
+}
+
+.countryInformation {
+  padding-top: 0rem;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "flagImage" "aboutCountry";
+}
+
+.aboutCountryInfo {
+  grid-template-columns: auto;
+  grid-template-rows: 60% 40%;
+  grid-template-areas: "aboutCountryInfoLeft" "aboutCountryInfoRight";
+  font-weight: 600;
+}
+.aboutCountry{
+  padding-left: 2rem;
+}
+
+.neighbours {
+  padding-top: 0.5rem;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "borderText" "borderCountries";
+}
+
+.borderCountries{
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  grid-template-columns: auto auto;
+}
+}
+
+@media only screen and (max-width: 281px) {
+  .toolbar{
+    grid-template-columns: 60% 40%;
+  }
+  .where_to{
+    font-size:0.8rem;
+    padding-left: 1rem;
+  }
+  .icon {
+    height: 2.5rem;
+    width: 12rem;
+  }
+  .mode_type{
+    font-size:0.8rem;
+  }
+  .theme{
+    grid-template-columns: 30% 70%;
+  }
+  .flagImage{
+    height: 10rem;
+    width: 15rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
