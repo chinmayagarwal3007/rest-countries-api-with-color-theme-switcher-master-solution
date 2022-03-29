@@ -99,6 +99,11 @@ body {
   font-weight: 400;
 }
 
+.mode_type_text:hover{
+  font-weight: 800;
+}
+
+
 .icon {
   padding-left: 55px;
   background-image: url("search.png");
