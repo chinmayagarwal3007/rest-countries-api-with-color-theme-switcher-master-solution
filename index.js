@@ -235,6 +235,19 @@ myForm.addEventListener("submit", (e) => {
   var element = document.getElementsByTagName("BODY")[0];
   element.appendChild(content);
   getapi(api_url);
+  
+    function delay2(time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
+  async function test2(b) {
+    console.log("start timer");
+    await delay2(b);
+    if (document.getElementsByClassName("card").length == 0){
+      alert("No such country");
+    }
+  }
+  test2(1500);
+  
 });
 
 function showCountry() {
