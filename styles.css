@@ -76,6 +76,9 @@ body {
   font-weight: 800;
   font-size: 1.3rem;
 }
+ .where_to:hover{
+    font-size:1.25rem;
+  }
 .theme {
   grid-area: theme;
   text-align: right;
@@ -385,6 +388,9 @@ body {
     font-size:1rem;
     padding-left: 1rem;
   }
+  .where_to:hover{
+    font-size:0.95rem;
+  }
   .toolbar{
     grid-template-columns: 55% 45%;
   }
@@ -435,6 +441,9 @@ body {
   .where_to{
     font-size:0.8rem;
     padding-left: 1rem;
+  }
+  .where_to:hover{
+    font-size:0.75rem;
   }
   .icon {
     height: 2.5rem;
