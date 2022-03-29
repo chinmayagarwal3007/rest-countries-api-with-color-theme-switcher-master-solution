@@ -117,6 +117,9 @@ body {
   width: 20rem;
   border-radius: 0.3rem;
 }
+icon:hover{
+    height: 3.2rem;
+  }
 .icon:focus {
   outline: none;
 }
@@ -360,6 +363,9 @@ body {
     height: 2.5rem;
     width: 17.5rem;
   }
+  icon:hover{
+    height: 2.7rem;
+  }
   
   .dropbtn {
     padding: 0.9rem;
@@ -433,6 +439,9 @@ body {
   .icon {
     height: 2.5rem;
     width: 12rem;
+  }
+  icon:hover{
+    height: 2.7rem;
   }
   .mode_type{
     font-size:0.8rem;
