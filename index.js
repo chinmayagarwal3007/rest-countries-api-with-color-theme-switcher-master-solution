@@ -437,7 +437,7 @@ function showCountry() {
     aboutCountry.appendChild(neighbours);
   }
   getcountry(api_url);
-  noNameLeft(500);
+  noNameLeft(700);
 }
 
 function noNameLeft(a) {
